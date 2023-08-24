@@ -1,0 +1,257 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'inter', sans-serif;
+    
+}
+
+body{
+    /* background-color: aqua; */
+    margin: 0 5%;
+
+}
+
+p{
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+}
+
+/* color set-up */
+:root{
+    --soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    padding: 5px 0;
+}
+
+.hero-image :nth-child(1){
+    width: 100%;
+    margin: 5% 0% 0% 0%;
+}
+
+.hero-image :nth-child(2){
+    display: none;
+
+}
+
+.hero-content{
+    /* background-color:blue; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.bright{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 5% 0%;
+}
+
+.read-more{
+    display: flex;
+    flex-direction: column;
+}
+
+.read-more a{
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    padding: 12px;
+    margin: 5% 0%;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+}
+
+.read-more a:hover{
+    background-color: var(--Very-dark-blue);
+
+}
+
+/* .new{
+    background-color: var(--Very-dark-blue);
+    color: aliceblue;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    margin-top: 2rem;
+
+    
+} */
+.new{
+    background-color: var(--Very-dark-blue);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    margin-top: 2rem;
+}
+.new-content p{
+    padding-top: 5%;
+}
+
+.new h2{
+    color: var(--soft-orange);
+    /* margin: 5% 5%; */
+}
+
+.new a{
+    color: var(--Off-white);
+    /* margin-left: 5%; */
+    /* font-size: 1.5rem; */
+   
+}
+.new a:hover{
+    color: var(--soft-orange);
+}
+
+
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0;
+}
+.footer-card img{
+    width: 30%;
+}
+.footer-card-content{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-card-content p{
+    font-size: 1.2rem;
+}
+.footer-card-content h1{
+    color: var(--grayish-blue);
+}
+.footer-card-content a{
+    color: var(--very-dark-blue);
+    font-size: 1.2rem;
+}
+.footer-card-content a:hover{
+    color: var(--soft-red);
+}
+
+nav ul{
+    display: none;
+}
+
+
+
+
+
+/* Media Query */
+/* Medium devices e.g tablet */
+@media (min-width: 658px) and (max-width:779px) {
+    body{
+        background-color: azure;
+    }
+
+    .bright{
+        font-size: 2.8rem;
+    }
+}
+
+
+/* Large device e.g desktop, PCs */
+@media (min-width: 779px) {
+    /* body{
+        background-color: blue;
+    } */
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8rem;
+
+
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        color: var(--Dark-grayish-blue);
+
+    }
+
+    /* nav ul:hover{
+        color: var(--Soft-red);
+    } */
+    .nav-link a:hover{
+        color: var(--Soft-red);
+    }
+
+    nav img:nth-child(2){
+        display: none;
+    }
+
+    .hero-image :nth-child(1){
+        display: none;
+    }
+    
+    .hero-image :nth-child(2){
+        width: 100%;
+        display: block;
+    
+    }
+    main{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+    section{
+        width: 70%;
+    }
+    
+    .new{
+        width: 30%;
+    }
+    .hero-content{
+        /* background-color:blue; */
+        /* display: flex;
+        justify-content: space-around; */
+        flex-direction: row;
+}
+
+.bright, .read-more{
+    width: 47%;
+}
+
+.new{
+    /* background-color: var(--Very-dark-blue);
+    color: aliceblue; */
+    padding-top: 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    height: auto;
+    padding-left: 5%;
+
+}
+}
